@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danh Sách Phụ Tùng Tự Động - AutoTech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="theme-dark-luxury">
+  
+  <!-- Navigation Mới -->
+  <nav class="navbar scrolled" id="navbar" style="background-color: var(--nav-bg);">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-car-side"></i> AutoTech
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="products.html" style="color: var(--accent-color); font-weight: 700;">Ngành Hàng</a></li>
+        <li><a href="services.html">Dịch vụ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-extra" style="display:flex; align-items:center;">
+        <div class="search-bar">
+          <input type="text" placeholder="Tìm kiếm mã SKU...">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="hamburger" style="margin-left: 20px;"><i class="fas fa-bars"></i></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Danh Danh Mục -->
+  <header class="page-header nambac-style-banner">
+    <div class="container">
+      <h1>PHỤ TÙNG & NỘI THẤT Ô TÔ</h1>
+      <div class="breadcrumb">
+        <span><a href="index.html">Trang chủ</a></span> <i class="fas fa-angle-right"></i> <span class="active">Phụ tùng</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="products-section">
+    <div class="container shop-layout">
+      <!-- Cây Danh Mục Sidebar (Theo phong cách Nam Bắc) -->
+      <aside class="shop-sidebar">
+        <div class="filter-group">
+          <h3><i class="fas fa-list"></i> Danh Mục Sản Phẩm</h3>
+          <ul class="category-list" id="categoryFilter">
+            <li class="active" data-filter="all">
+              <span>Tất cả phụ tùng</span> <span class="count">(10)</span>
+            </li>
+            <li data-filter="Động Cơ">
+              <span>Động Cơ & Hộp Số</span> <i class="fas fa-plus"></i>
+            </li>
+            <li data-filter="Phanh & An Toàn">
+              <span>Hệ Thống Phanh</span> <i class="fas fa-plus"></i>
+            </li>
+            <li data-filter="Hệ Thống Đèn">
+              <span>Đèn & Gương Chóa</span> <i class="fas fa-plus"></i>
+            </li>
+            <li data-filter="Nội Thất">
+              <span>Nội Thất Ô Tô</span> <i class="fas fa-plus"></i>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="filter-group banner-sidebar">
+          <img src="images/banner.png" alt="Khuyến mãi" style="width:100%; border-radius: var(--radius-sm); border: 2px solid var(--accent-color);">
+        </div>
+      </aside>
+
+      <!-- Vùng hiển thị lưới sản phẩm -->
+      <div class="shop-main">
+        <div class="shop-controls">
+          <div class="display-modes">
+            <button class="active"><i class="fas fa-th-large"></i> Lưới</button>
+            <button><i class="fas fa-list"></i> Danh sách</button>
+          </div>
+          <div class="sort-dropdown">
+            Sắp xếp: 
+            <select>
+              <option>Mới nhất</option>
+              <option>Giá Thấp - Cao</option>
+              <option>Giá Cao - Thấp</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid" id="allProductsGrid">
+          <!-- Inject JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nút Style giữ nguyên -->
+  <div class="style-switcher-wrapper">
+    <div class="style-switcher-toggle" id="switcherToggle">
+      <i class="fas fa-palette"></i> Style
+    </div>
+    <div class="style-switcher-panel" id="switcherPanel">
+      <h3>Chọn Theme (UI/UX)</h3>
+      <div class="theme-options">
+        <button class="theme-btn active" data-theme="theme-dark-luxury"><span class="color-dot" style="background:#0a0a0a; border: 2px solid #d4af37"></span>Dark Luxury</button>
+        <button class="theme-btn" data-theme="theme-fresh-modern"><span class="color-dot" style="background:#ffffff; border: 2px solid #2563eb"></span>Fresh Modern</button>
+        <button class="theme-btn" data-theme="theme-racing-red"><span class="color-dot" style="background:#18181b; border: 2px solid #ef4444"></span>Racing Red</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

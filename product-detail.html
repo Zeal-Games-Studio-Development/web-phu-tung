@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi Tiết Phụ Tùng - AutoTech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="theme-dark-luxury">
+  
+  <nav class="navbar scrolled" id="navbar" style="background-color: var(--nav-bg);">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-car-side"></i> AutoTech
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="products.html" style="color: var(--accent-color); font-weight: 700;">Ngành Hàng</a></li>
+        <li><a href="services.html">Dịch vụ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-extra" style="display:flex; align-items:center;">
+        <div class="search-bar">
+          <input type="text" placeholder="Tìm kiếm mã SKU...">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="hamburger" style="margin-left: 20px;"><i class="fas fa-bars"></i></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-detail-section nambac-detail">
+    <div class="container">
+      <div class="breadcrumb" style="margin-bottom: 2rem;">
+        <span><a href="index.html" style="color:var(--text-secondary)">Trang chủ</a></span> <i class="fas fa-angle-right" style="color:var(--text-secondary); margin:0 10px;"></i>
+        <span><a href="products.html" style="color:var(--text-secondary)">Phụ tùng</a></span> <i class="fas fa-angle-right" style="color:var(--text-secondary); margin:0 10px;"></i>
+        <span class="active" style="color:var(--accent-color)">Chi Tiết</span>
+      </div>
+
+      <div id="productDetailContainer">
+        <!-- Rendered via JS -->
+      </div>
+      
+      <!-- Nambac Style Tabs -->
+      <div class="product-tabs">
+        <div class="tab-headers">
+          <button class="active">Thông Tin Chi Tiết</button>
+          <button>Thông Số Kỹ Thuật</button>
+          <button>Hướng Dẫn Lắp Đặt</button>
+        </div>
+        <div class="tab-content" style="padding: 2rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 0 0 var(--radius-sm) var(--radius-sm); line-height: 1.8;">
+          <p>Sản phẩm phân phối chính hãng bởi AutoTech. Ứng dụng công nghệ vượt trội giúp cải thiện hiệu năng tối đa cho xe.</p>
+          <br>
+          <p>Lưu ý: Quý khách vui lòng cung cấp đúng mã VIN của xe để đội ngũ kỹ thuật đối chiếu tính tương thích trước khi xuất kho giao hàng. AutoTech áp dụng chính sách 1 đổi 1 trong vòng 30 ngày nếu phát hiện lỗi từ NSX.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
