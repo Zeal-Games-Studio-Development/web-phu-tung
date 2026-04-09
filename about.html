@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Về Chúng Tôi - AutoTech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="theme-dark-luxury">
+  
+  <nav class="navbar scrolled" id="navbar" style="background-color: var(--nav-bg);">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-car-side"></i> AutoTech
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="products.html">Ngành Hàng</a></li>
+        <li><a href="services.html">Dịch vụ</a></li>
+        <li><a href="about.html" style="color: var(--accent-color); font-weight: 700;">Giới thiệu</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-extra" style="display:flex; align-items:center;">
+        <div class="search-bar" style="display:none;">
+          <input type="text" placeholder="Tìm kiếm mã SKU...">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="hamburger" style="margin-left: 20px;"><i class="fas fa-bars"></i></div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('images/garage.png'); background-size: cover; background-position: center;">
+    <div class="container">
+      <h1 style="color: #fff; font-size: 3.5rem;">CÂU CHUYỆN AUTOTECH</h1>
+      <div class="breadcrumb" style="color: #ccc;">
+        <span><a href="index.html">Trang chủ</a></span> <i class="fas fa-angle-right"></i> <span class="active" style="color: var(--accent-color);">Giới thiệu</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="about-section" style="padding-top: 6rem;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2 class="section-title">HÀNH TRÌNH TỰ HÀO</h2>
+          <p>Được thành lập từ năm 2016, AutoTech khởi đầu bằng một trạm dịch vụ nhỏ giữa lòng TP.HCM. Chặng đường 10 năm chuyển mình vươn lên nhờ sự chuyên nghiệp và khao khát mang đến cho chủ nhân những sản phẩm, phụ tùng chính hãng đạt tiêu chuẩn Quốc tế.</p>
+          <div class="stats" style="margin-top: 3rem;">
+            <div class="stat-item">
+              <h3>10+</h3>
+              <p>Năm Xây Dựng</p>
+            </div>
+            <div class="stat-item">
+              <h3>3,000+</h3>
+              <p>Trạm Sửa Chữa Đã Giao Dịch</p>
+            </div>
+            <div class="stat-item">
+              <h3>20+</h3>
+              <p>Kĩ Thuật Viên Đạt Chuẩn</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-images">
+          <img src="images/garage.png" alt="Xưởng dịch vụ" class="about-img main-img" />
+          <img src="images/mechanics.png" alt="Đội ngũ thợ" class="about-img float-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo"><i class="fa-solid fa-car-side"></i> AutoTech</div>
+      <p>&copy; 2026 AutoTech. Tất cả các quyền được bảo lưu.</p>
+    </div>
+  </footer>
+
+  <div class="style-switcher-wrapper">
+    <div class="style-switcher-toggle" id="switcherToggle"><i class="fas fa-palette"></i> Style</div>
+    <div class="style-switcher-panel" id="switcherPanel">
+      <h3>Chọn Theme (UI/UX)</h3>
+      <div class="theme-options">
+        <button class="theme-btn active" data-theme="theme-dark-luxury"><span class="color-dot" style="background:#0a0a0a; border: 2px solid #d4af37"></span>Dark Luxury</button>
+        <button class="theme-btn" data-theme="theme-fresh-modern"><span class="color-dot" style="background:#ffffff; border: 2px solid #2563eb"></span>Fresh Modern</button>
+        <button class="theme-btn" data-theme="theme-racing-red"><span class="color-dot" style="background:#18181b; border: 2px solid #ef4444"></span>Racing Red</button>
+        <button class="theme-btn" data-theme="theme-ocean-depth"><span class="color-dot" style="background:#0f172a; border: 2px solid #06b6d4"></span>Ocean Depth</button>
+        <button class="theme-btn" data-theme="theme-industrial"><span class="color-dot" style="background:#1f1e1d; border: 2px solid #f97316"></span>Industrial</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
